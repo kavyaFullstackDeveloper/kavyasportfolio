@@ -4,6 +4,8 @@
     /* background: url('https://cdn.dribbble.com/users/331265/screenshots/2542587/gabi-d_still.gif?resize=400x0');  */
     /* background-image: url('https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg'); */
     background-image: url('https://wallpaperaccess.com/full/3239444.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2023/02/15/20/01/ai-generated-7792597_1280.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2023/05/28/09/12/ai-generated-8023195_1280.jpg');
     background-size:cover;
     position:relative;
 }
@@ -20,12 +22,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: gainsboro;
+    color: white;
 }
 
-header{
-  color: white;
-}
 
 /* about section image css */
 .imageAboutPage {
@@ -46,11 +45,6 @@ header{
     text-align: center;
 }
 
-.card-body{
-
-    overflow: auto;
-    margin: 0px 0px 10px 0px;
-}
 .card:hover .servicesIcon {
     color: #008000;
 }
@@ -68,7 +62,7 @@ header{
     font-size: 36px;
     cursor: pointer;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover, .fa-envelope-o:hover {
     color: #008000;
 }
 .fab {
@@ -87,4 +81,38 @@ header{
 }
 #contact {
     padding-bottom: 4rem;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    color: blue;
+    text-decoration: underline;
+    margin-top: 0px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+label:after{
+    content: "more";
+}
+
+input:checked~label:after{
+    content: "less";
+}
+
+.inner{
+    max-height: 150px;
+    overflow: hidden;
+    transition: all .3s ease;
+    width: auto;
+}
+input:checked+.inner{
+    max-height: 500px;
+}
+
+.card{
+    overflow: auto;
 }
